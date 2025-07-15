@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Lorem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background: #f0e6dd;
+            font-family: "varela",sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .common-header header{
+            font-size: 2.7rem;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+        ::placeholder{
+            font-weight: 500;
+            color:rgb(48,10,10);
+        }
+        /* .fa-regular{
+            position: absolute;
+            right:57rem;
+            top:55%;
+            transform: translate(-50%,-50%);
+            font-size: 1.4rem;
+            cursor: pointer;
+        } */
+        .input-submit{
+            position: relative; 
+        }
+        .submit-btn{
+            width: 100%;
+            height: 4.5rem;
+            background-color: rgb(48,10,10);
+            border-radius:3rem;
+            border: none;
+            cursor: pointer;
+            transition:all .3s;
+        }
+        .input-submit label{
+            position:absolute;
+            top:45%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+            cursor: pointer;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        .submit-btn:hover{
+            transform: scale(1.05,1);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .account-box{
+            padding-bottom: 4rem;
+            padding-top: 1rem;
+            height: auto;
+        }
+        .button{    
+            margin: 0;
+            position: relative;
+            left: -3.5rem;
+        }
+        .btn{
+            margin-bottom: 2rem;
+            background-color: rgb(48,10,10);
+            color: #fff;
+            width: 50%;
+            border-radius: 3rem;
+            outline:none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .Captcha{
+            width: 50%;
+        }
+        .message{
+            width: 50%;
+            position: relative;
+            bottom: -1.5rem;
+            font-size: 1.8rem;
+            color:green;
+            font-weight: 550;
+            font-family: "varela",sans-serif;
+            display: none;
+        }
+        .message.active{
+            display: block;
+        }
+        .Captcha-input{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 2.3rem;
+        }
+        .Captcha-input .input-field{
+            width: 50%;
+        }
+        .Captcha-input .message{
+            width: 50%;
+        }
+        .fa-solid{
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: 0 2rem;
+            
+        }
+        .Captcha-input .input-field{
+            transition: .2s;
+        }
+        .Captcha-input .input-field:focus{
+            width:55%;
+        }
+        .Captcha{
+            display: flex;
+            justify-content: space-around;
+        }
+        .refresh{
+            height: fit-content;
+            background-color: #fff;
+            border: none;
+            margin-top:1.7rem;
+        }
+
+        @media screen and (width <=700px){
+            html{
+                font-size:55%;
+            }
+        }
+        @media screen and (width <=700px){
+            html{
+                font-size:51%;
+            }
+            .account-box{
+                margin: 0 2rem;
+            }
+        }
+        @media screen and (width <=460px){
+            html{
+                font-size:45%;
+            }
+            .account-box{
+                margin: 0 2rem;
+            }
+        }
+        @media screen and (width <=385px){
+            html{
+                font-size:40%;
+            }
+            body{
+                padding: 0;
+            }
+            .account-box{
+                margin: 0 2rem;
+            }
+        }
+        @media screen and (width <=340px){
+            html{
+                font-size:38%;
+            }
+            body{
+                padding: 0;
+            }
+            .account-box{
+                margin: 0 2rem;
+            }
+            .input-box{
+                width: 100%;
+            }
+            .btn{
+                width: 90px;
+                height:28px;
+                font-size: 1.5rem;
+            }
+        }
+        @media screen and (width >= 1920px) {
+            html{
+                font-size: 80%;
+            }
+            .btn{
+                font-size: 1.2rem;
+            }
+        }
+        @media screen and (width >=3000px){
+            html{
+                font-size: 1.7rem;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="account-box">
+        <div class="common-header">
+            <header>
+                Sign Up
+            </header>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="FirstName" autocomplete="off" required>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="LastName" autocomplete="off" required>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="UserName" autocomplete="off" required>
+        </div>
+        <div class="input-box">
+            <input type="email" class="input-field" placeholder="Email" autocomplete="off" required>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" id="password" placeholder="Password" autocomplete="off" required>
+
+        </div>
+        <div class="input-box Captcha">
+            <input type="text" class="input-field" value=" " disabled>
+            <button class="refresh"><i class="fa-solid fa-arrows-rotate"></i></button>
+        </div>
+        <div class="input-box Captcha-input">
+            <input type="text" class="input-field" placeholder="Enter Captcha" autocomplete="off" required>
+            <span class="message">Entered Captcha is Correct</span>
+        </div>
+        <div class="input-box button">
+            <button class="btn">Submit Captcha</button>
+        </div>
+        <div class="input-submit">
+            <button type="submit" class="submit-btn" id="submit"></button>
+            <label for="submit">Sign Up</label>
+        </div>
+
+        
+        
+    <!--?Aos plugin js start-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
+    <!--?Aos plugin js end-->
+
+
+        <script>
+
+        /*captcha js snippet start*/
+
+        const captchaTextBox = document.querySelector(".Captcha input");
+        const captchaInputBox = document.querySelector(".Captcha-input input");
+        const refreshButton = document.querySelector(".refresh");
+        const message = document.querySelector(".message");
+        const submitButton = document.querySelector(".button");
+
+        let captchaText = null;
+// Function to generate captcha
+const generateCaptcha = () => {
+    const randomString = Math.random().toString(36).substring(2, 7);
+    const randomStringArray = randomString.split("");
+    const changeString = randomStringArray.map((char) => (Math.random() > 0.5 ? char.toUpperCase() : char));
+    captchaText = changeString.join("   ");
+    captchaTextBox.value = captchaText;
+    console.log(captchaText);
+};
+const refreshBtnClick = () => {
+    generateCaptcha();
+    captchaInputBox.value = "";
+    captchaKeyUpValidate();
+};
+const captchaKeyUpValidate = () => {
+  //Toggle submit button disable class based on captcha input field.
+    submitButton.classList.toggle("disabled", !captchaInputBox.value);
+    if (!captchaInputBox.value) message.classList.remove("active");
+};
+// Function to validate the entered captcha
+const submitBtnClick = () => {
+    captchaText = captchaText
+    .split("")
+    .filter((char) => char !== " ")
+    .join("");
+    message.classList.add("active");  
+    message.style.backgroundColor = "#fff";
+    message.style.width = "27rem";
+    message.style.padding = "1px 1px 1px 3px";
+    message.style.bottom = "-1.2rem"
+  // Check if the entered captcha text is correct or not
+    if (captchaInputBox.value === captchaText) {
+    message.innerText = "Entered captcha is correct";
+    message.style.color = "#32a84e";
+    } else {
+    message.innerText = "Entered captcha is not correct";
+    message.style.color = "#FF2525";
+    }
+};
+// Add event listeners for the refresh button, captchaInputBox, submit button
+refreshButton.addEventListener("click", refreshBtnClick);
+captchaInputBox.addEventListener("keyup", captchaKeyUpValidate);
+submitButton.addEventListener("click", submitBtnClick);
+// Generate a captcha when the page loads
+generateCaptcha();
+
+        /*captcha js snippet end*/
+
+
+    </script>
+
+
+
+</body>
+</html>
