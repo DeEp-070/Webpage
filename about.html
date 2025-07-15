@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boost your tech career with practical tutorials, project-based learning, and skill-building resources in web development, Java, Python, ethical hacking, and more.">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        main{
+            padding-top: 15rem ;
+            background-image: linear-gradient(to bottom, #380a12, #42161b, #4c2124, #572d2e, #613838);
+        }
+        main *{
+            color: white;
+        }
+
+        .grid-two--rows{
+            grid-template-rows: repeat(2,1fr);
+        }
+        .section-about-content{
+            width: 100%;
+            height: auto;
+        }
+        .section-about-content .about-heading{
+            font-size: 4rem;
+            color:white;
+            padding: 1rem 3rem ;
+            width: auto;
+            font-family: varela,sans-serif;
+            text-align: center;
+            letter-spacing: .4rem;
+        }
+
+        .section-about-content .about-para{
+            font-size: 2rem;
+            color:white;
+            padding: 2rem 3rem ;
+            width: auto;
+            text-align: center;
+            line-height: 2.5rem;
+        }
+
+        .grid .grid-three--cols{
+            grid-template-columns: repeat(3,1fr);
+            gap:4rem;
+        }
+
+        .section-about-course .grid{
+            gap: 10rem;
+        }
+
+        .section-about-content .container{
+            width: 100%;
+            height: auto;
+            padding-top: 0;
+        }
+
+        .grid-course{
+            background-color: #fff9f5;
+            height: fit-content;
+            width:100%;
+            padding-top: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            transition: all .2s linear;
+            
+            &:hover{
+                background-color: #f5dcc3;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                cursor: pointer;
+            }
+        }
+
+        .grid-course .image img{
+            width: 90%;
+            height: auto;
+            max-height: 300px;
+            padding: 4rem 12rem 5rem 12rem;
+        }
+        .section-about-content .container {
+            margin-top: -2rem;
+        }
+
+        .section-about-course .common-number{
+            font-size: 3rem;
+            text-align: center;
+            padding-top: -10rem;
+            font-family:"Varela", sans-serif;
+            color: rgb(48, 10, 10);
+            font-weight: 900;
+        }
+
+        .section-about-course .common-categories{
+            font-size: 2rem;
+            text-align: center;
+            padding-bottom: 2rem;
+            color: rgb(48, 10, 10);
+            text-transform: capitalize;
+        }
+        .section-course .container{
+            padding-bottom: 3rem;
+        }
+
+        .course-icon img{
+            width: 100%;
+            height: 15rem;
+            border-radius: 2rem;
+        }
+        @media screen and (width >=1920px) {
+            .grid-course .image img {
+            padding: 2rem 5% 3rem 5%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+        }
+        }
+        @media screen and (width >= 2900px) {
+        .grid-course .image img {
+            padding: 2rem 5% 3rem 5%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+        }
+        }
+        @media screen and (width<=1300px) {
+            .grid-course .image img {
+            padding: 2rem 5% 3rem 5%;
+            height: auto;
+            max-height: 100px;
+            object-fit: contain;
+        }
+        }
+
+        @media screen and (width <= 1100px) {
+            .grid-four--cols{
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 4rem;
+                padding-top: 4.8rem;
+            }
+            .course-div img {
+                border-radius: 1.5rem;
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+            }
+        
+        @media screen and (width <=820px) {
+            .grid-three--cols{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        }
+    </style>
+</head>
+<body>
+        <!--?Navbar section start-->
+    <header class="section-navbar">
+    <div class="container" id="navContainer">
+
+    <!-- Logo -->
+        <div class="navbar-image">
+        <a href="index.html">
+            <img src="./assets/Images/freepik-simple-linear-travel-destination-agency-logo-202507070935132EMg.webp" alt="Logo" height="78px" width="90%" />
+        </a>
+        </div>
+
+    <!-- Login & Sign Up (always visible) -->
+    
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">☰</div>
+    
+    <!-- Collapsible Nav Menu (only links) -->
+        <nav class="navbar" id="navbarMenu">
+            <ul>
+                <li class="nav_items"><a href="index.html">Home</a></li>
+                <li class="nav_items"><a href="about.html">About</a></li>
+                <li class="nav_items"><a href="services.html">Services</a></li>
+                <li class="nav_items"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+        <a href="login.html" class="btn login">Login</a>
+        <a href="signup.html" class="btn register">Sign Up</a>
+        </div>
+
+    </div>
+    </header>
+
+    <!--?Navbar section end-->
+
+    <!--?Achievement section start-->
+    <main>
+        <section class="section-achivements">
+            <div class="grid-two--rows">
+                <div class="section-about-content">
+                    <h1 class="about-heading">Achievement</h1>
+                    <p class="about-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, ipsum, soluta placeat, commodi ex voluptas tempora expedita tenetur mollitia sapiente odit. Amet temporibus vel animi atque quas dignissimos, esse non asperiores suscipit incidunt dolorem cumque quidem qui beatae illum voluptatum?</p>
+                </div>
+                <div class="section-about-course">
+            <div class="container grid grid-three--cols">
+                <article class="grid-course" data-aos="fade-right">
+                    <span class="image" id="image">
+                        <img src="./assets/Images/online-class_3039719.png" alt="student">
+                    </span>
+                    <h2 class="common-number">200+</h2>
+                    <h4 class="common-categories">courses</h4>
+                </article>
+                <article class="grid-course" data-aos="fade-up">
+                    <span class="image">
+                        <img src="./assets/Images/student_2972044.png" alt="student">
+                    </span>
+                    <h2 class="common-number">200+</h2>
+                    <h4 class="common-categories">students</h4>
+                </article>
+                <article class="grid-course" data-aos="fade-left">
+                    <span class="image">
+                        <img src="./assets/Images/trophy_3871247.png" alt="student">
+                    </span>
+                    <h2 class="common-number">200+</h2>
+                    <h4 class="common-categories">awards</h4>
+                </article>
+            </div>
+            </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1752218502">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+        </section>
+    </main>
+<!--?Achievement section end-->
+
+<!--?Team members section start-->
+    <section class="section-course">
+        <div class="container">
+            <div class="common-heading">Team Members</div>
+        </div>
+        <div class="container grid grid-four--cols">
+            <div class="course-div"  data-aos="fade-up">
+                <div class="course-icon">
+                    <img src="./assets/Images/premium_photo-1682144187125-b55e638cf286.jpg" alt="Faculty picture">
+                </div>
+                <h3 class="section-common--title">Lorem</h3>
+                <div class="footer-icon">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="course-div" data-aos="fade-up">
+                <div class="course-icon">
+                    <img src="./assets/Images/positive-indian-financial-advisor-holding-open-folder.webp" alt="Faculty picture">
+                </div>
+                <h3 class="section-common--title">Lorem</h3>
+                <div class="footer-icon">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="course-div" data-aos="fade-up">
+                <div class="course-icon">
+                    <img src="./assets/Images/premium_photo-1682144187125-b55e638cf286.jpg" alt="Faculty picture">
+                </div>
+                <h3 class="section-common--title">Lorem</h3>
+                <div class="footer-icon">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="course-div" data-aos="fade-up">
+                <div class="course-icon">
+                    <img src="./assets/Images/premium_photo-1682144187125-b55e638cf286.jpg" alt="Faculty picture">
+                </div>
+                <h3 class="section-common--title">Lorem</h3>
+                <div class="footer-icon">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div> 
+            <div class="course-div" data-aos="fade-up">
+                <div class="course-icon">
+                    <img src="./assets/Images/positive-indian-financial-advisor-holding-open-folder.webp" alt="Faculty picture">
+                </div>
+                <h3 class="section-common--title">Lorem</h3>
+                <div class="footer-icon">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="course-div" data-aos="fade-up" >
+                <div class="course-icon">
+                    <img src="./assets/Images/positive-indian-financial-advisor-holding-open-folder.webp" alt="Faculty picture">
+                </div>
+                <h3 class="section-common--title">Lorem</h3>
+                <div class="footer-icon">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="course-div" data-aos="fade-up" >
+                <div class="course-icon">
+                    <img src="./assets/Images/premium_photo-1682144187125-b55e638cf286.jpg" alt="Faculty picture">
+                </div>
+                <h3 class="section-common--title">Lorem</h3>
+                <div class="footer-icon">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!--?Team members section end-->
+
+
+
+        <!--?Footer section start-->
+    <footer>
+        <div class="container grid grid-four--cols">
+            <div class="footer-1">
+                <div class="logo">
+                    <a href="index.html" class="footer-subheading">Lorem ipsum</a>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, rerum!</p>
+
+                <div class="footer-icon">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-2">
+                <p class="footer-subheading">Lorem</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <p class="footer-subheading">Lorem</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <p class="footer-subheading">Lorem</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--?Footer section end-->
+
+
+    <!--?Aos plugin js start-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
+    <!--?Aos plugin js end-->
+
+
+        <script>
+    const hamburger = document.getElementById("hamburger");
+    const navbarMenu = document.getElementById("navbarMenu");
+
+    hamburger.addEventListener("click", () => {
+        navbarMenu.classList.toggle("active");
+    });
+</script>
+</body>
+</html>

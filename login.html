@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Lorem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background: #f0e6dd;
+            font-family: "varela",sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ::placeholder{
+            font-weight: 500;
+            color:rgb(48,10,10);
+        }
+        section{
+            display: flex;
+            align-items: center;
+            font-size: 1.6rem;
+            color: rgb(48,10,10);
+        }
+        label{
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+        section a{
+            font-size: 1.7rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            transition: all .2s ease-in-out;
+        }
+        #check{
+            margin-right: 1rem;
+            cursor: pointer;
+            width: auto;
+            aspect-ratio: 1;
+        }
+        .fa-regular{
+            /* position: absolute;
+            right:57rem;
+            top:51.5%;
+            transform: translate(-50%,-50%); */
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+        .input-submit{
+            position: relative; 
+        }
+        .submit-btn{
+            width: 100%;
+            height: 5rem;
+            background-color: rgb(48,10,10);
+            border-radius:3rem;
+            border: none;
+            cursor: pointer;
+            transition:all .3s;
+        }
+        .input-submit label{
+            position:absolute;
+            top:45%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+            cursor: pointer;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        .submit-btn:hover{
+            transform: scale(1.05,1);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .signup{
+            text-align: center;
+            font-size: 1.3rem;
+            margin-top: 1.8rem;  
+        }
+        .signup a{
+            color: rgb(48,10,10);
+            font-weight: 600;
+            font-size: 1.8rem;
+            font-family: "varela",sans-serif;
+        }
+
+        .password{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4rem;
+        }
+        #password{
+            width: 90%;
+        }
+        
+        /*Responsive start*/
+
+        @media screen and (width <=630px) {
+            html{
+                font-size: 50%;
+            }
+        }
+        @media screen and (width <= 530px) {
+            html{
+                font-size: 45%;
+            }
+            .account-box{
+                margin: 0 2rem;
+            }
+        }
+        @media screen and (width <= 345px) {
+            html{
+                font-size: 45%;
+            }
+            .forget{
+                gap:3rem;
+            }
+        }
+        @media screen and (width >= 1920px) {
+            html{
+                font-size: 88%;
+            }
+            #check{
+                width: 1.6rem;
+                aspect-ratio: 1;
+            }
+        }
+        @media screen and (width >=3000px){
+            html{
+                font-size: 1.7rem;
+            }
+            #check{
+                width: 1.8rem;
+                aspect-ratio: 1;
+            }
+        }
+        /*Responsive end*/
+    </style>
+</head>
+<body>
+    <div class="account-box">
+        <div class="common-header">
+            <header>
+                Login
+            </header>
+        </div>
+        <div class="input-box">
+            <input type="email" class="input-field" placeholder="Email/UserName" autocomplete="off" required>
+        </div>
+        <div class="input-box password">
+            <input type="password" class="input-field password-input"  id="password" placeholder="Password" autocomplete="off" required>
+            <div class="toogle"><i class="fa-regular fa-eye-slash" id="eye"></i></div>
+        </div>
+        <div class="forget">
+            <section>
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </section>
+            <section>
+                <a href="#" target="_blank">Forgot Password</a>
+            </section>
+        </div>
+        <div class="input-submit">
+            <button type="submit" class="submit-btn" id="submit"></button>
+            <label for="submit">Sign In</label>
+        </div>
+        <div class="signup">
+            <h2>Don't have account? <a href="signup.html">Sign Up</a></h2>
+        </div>
+    </div>
+
+
+    
+
+    <!--?password toggle js script start-->
+    <script>
+        const eye = document.getElementById("eye");
+        const password = document.getElementById("password");
+        eye.onclick = function() {
+            if(password.type == "password"){
+                password.type="text";
+                eye.classList="fa-regular fa-eye";
+            }
+            else{
+                password.type = "password";
+                eye.classList="fa-regular fa-eye-slash";
+            }
+        }
+    </script>
+
+    <!--?password toggle js script end-->
+</body>
+</html>
